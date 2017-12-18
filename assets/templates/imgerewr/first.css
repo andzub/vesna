@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/* в данном файле находятся все переменные проекта */
+.top-header {
+  position: relative;
+  padding: 30px 15px 25px 15px; }
+  .top-header::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media only screen and (max-width: 767px) {
+    .top-header {
+      padding-bottom: 10px; } }
+  @media only screen and (max-width: 767px) {
+    .top-header .logo > a {
+      display: block;
+      margin: 0 auto;
+      height: auto; } }
+  @media only screen and (max-width: 767px) {
+    .top-header img {
+      margin: 0 auto 30px auto; } }
+
+.mm-menu.mm-offcanvas.mm-right {
+  z-index: 1; }
+
+.btn-group {
+  width: 28%;
+  margin-left: auto;
+  margin-bottom: 15px; }
+  @media only screen and (max-width: 992px) {
+    .btn-group {
+      width: 37%; } }
+  .btn-group > .trigger-call {
+    margin-top: -22px;
+    vertical-align: middle;
+    padding-top: 2.2%;
+    padding-bottom: 2.2%; }
+  .btn-group > .trigger-search {
+    margin-right: 2%;
+    width: 40px;
+    height: 30px;
+    position: relative; }
+    .btn-group > .trigger-search::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      width: 16px;
+      height: 16px;
+      background: url("../img/searchicon.svg") no-repeat 0 0; }
+    .btn-group > .trigger-search:hover::after {
+      background: url("../img/searchiconhover-01.svg") no-repeat 0 0; }
+  .btn-group > label {
+    display: inline-block;
+    margin-left: 3%;
+    font-size: 0.8125rem;
+    padding: 5px 13px;
+    line-height: 1.0625rem;
+    border: 1px solid transparent;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out; }
+    .btn-group > label:hover {
+      background: #fff;
+      border-color: #205a9c;
+      text-decoration: none; }
+    @media only screen and (max-width: 992px) {
+      .btn-group > label {
+        text-align: center;
+        width: 42%; } }
+    @media only screen and (max-width: 767px) {
+      .btn-group > label {
+        display: none; } }
+
+.mobile-menu {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  outline: none;
+  display: none;
+  position: absolute;
+  right: -3%;
+  top: 13%;
+  color: #000; }
+  @media only screen and (max-width: 767px) {
+    .mobile-menu {
+      right: 0;
+      position: relative; } }
+  .mobile-menu::before {
+    content: "";
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: url(../img/icon4.svg) no-repeat 0 0; }
+  .mobile-menu:focus {
+    color: #000;
+    text-decoration: none; }
+
+.mobile-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  width: 36%;
+  margin: 0 auto; }
+  @media only screen and (max-width: 640px) {
+    .mobile-nav {
+      width: 45%; } }
+  @media only screen and (max-width: 480px) {
+    .mobile-nav {
+      width: 65%; } }
+  @media only screen and (max-width: 320px) {
+    .mobile-nav {
+      width: 80%; } }
+  .mobile-nav > a {
+    display: inline-block;
+    width: 10%; }
+    .mobile-nav > a:last-child {
+      margin-right: 0; }
+    .mobile-nav > a:first-child {
+      margin-left: 0; }
+    .mobile-nav > a::before {
+      display: block;
+      margin: 0 auto; }
+  .mobile-nav > .mobile-callback {
+    position: relative; }
+    .mobile-nav > .mobile-callback::before {
+      content: "";
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+      background-size: cover;
+      background: url(../img/icon2.svg) no-repeat 0 0; }
+  .mobile-nav > .mobile-search::before {
+    content: "";
+    display: inline-block;
+    line-height: 36px;
+    width: 36px;
+    height: 36px;
+    background: url(../img/icon3.svg) no-repeat 0 0; }
+  .mobile-nav > .mobile-sidebar::before {
+    content: "";
+    width: 36px;
+    height: 36px;
+    background: url(../img/icon1.svg) no-repeat 0 0;
+    display: inline-block; }
+
+.home .mobile-nav > .mobile-menu::before {
+  right: -30%; }
+
+@media only screen and (max-width: 767px) {
+  .menu {
+    display: none; } }
+
+.menu > ul {
+  margin: 0;
+  padding: 0;
+  width: 76%;
+  margin-left: auto;
+  list-style: none; }
+  @media only screen and (max-width: 992px) {
+    .menu > ul {
+      width: 100%;
+      margin-left: 0;
+      margin-right: auto; } }
+  .menu > ul li {
+    display: inline-block;
+    padding: 1% 2%;
+    list-style: none; }
+    .menu > ul li:first-child {
+      padding-left: 0; }
+    .menu > ul li:last-child {
+      padding-right: 0; }
+    .menu > ul li a {
+      color: #373636;
+      font-family: Exo2500, sans-serif;
+      font-size: 1.125rem; }
+      .menu > ul li a:hover {
+        text-decoration: underline; }

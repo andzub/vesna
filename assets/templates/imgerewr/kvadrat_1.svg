@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="141" height="142" viewBox="0 0 141 142">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-1);
+        stroke: #9a9a9a;
+        stroke-width: 1px;
+        filter: url(#filter-chain-1);
+        fill-rule: evenodd;
+      }
+    </style>
+
+    <linearGradient id="linear-gradient-1" gradientUnits="userSpaceOnUse" x1="70.5" y1="141.5" x2="70.5" y2="0.5">
+      <stop offset="0" stop-color="#9c9c9c"/>
+      <stop offset="0.75" stop-color="#f3f3f3"/>
+      <stop offset="1" stop-color="#f3f3f3"/>
+    </linearGradient>
+    <filter id="filter-chain-1" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#e6e7ea"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend in2="SourceGraphic" result="solidFill"/>
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="SourceAlpha" result="snSilhouette"/>
+      <feOffset dx="27.341" dy="-61.167" in="snSilhouette" result="snShifted1"/>
+      <feOffset dx="-27.341" dy="61.167" in="snSilhouette" result="snShifted2"/>
+      <feComposite operator="xor" in="snShifted1" in2="snShifted2"/>
+      <feComposite operator="xor" in2="snSilhouette"/>
+      <feComposite operator="in" in2="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8.185"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.7"/>
+      </feComponentTransfer>
+      <feComposite operator="in" in2="SourceAlpha"/>
+      <feBlend mode="overlay" in2="solidFill" result="chromeFX"/>
+      <feOffset dx="0.5" dy="0.866" in="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="innerShadowBlur"/>
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="out" in2="innerShadowBlur"/>
+      <feComposite operator="in" in2="SourceAlpha"/>
+      <feBlend mode="overlay" in2="chromeFX" result="innerShadow"/>
+    </filter>
+  </defs>
+  <g style="fill: url(#linear-gradient-1); filter: url(#filter-chain-1)">
+    <path d="M0.500,0.500 L105.500,0.500 C124.830,0.500 140.500,16.170 140.500,35.500 L140.500,141.500 L0.500,141.500 L0.500,0.500 Z" id="path-1" style="stroke: inherit; filter: none; fill: inherit" class="cls-1"/>
+  </g>
+  <use xlink:href="#path-1" style="stroke: #9a9a9a; filter: none; fill: none"/>
+</svg>
